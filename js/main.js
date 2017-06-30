@@ -29,7 +29,7 @@ function comparer (choixOrdi, choixUtilisateur) {
          return("Egalité !");
     }
 
-//Si le choix de l'ordi est pierre//
+//Sinon si le choix de l'ordi est pierre//
   else if(choixOrdi === "pierre") {
 
   if(choixUtilisateur === "ciseaux") {
@@ -44,7 +44,40 @@ function comparer (choixOrdi, choixUtilisateur) {
     }
 }
 
+//sinon si le choix de l'ordi est feuille//
+else if(choixOrdi==="feuille") {
 
+    if(choixUtilisateur==="pierre") {
+      pointOrdi++;
+      return (" feuille gagne !");
 
+    }
+    else {
+      pointUser++;
+      return ("ciseaux gagne !");
+
+    }
+
+}
+
+//Sinon si le choix de l'ordi est ciseaux//
+else if(choixOrdi==="ciseaux") {
+
+    if(choixUtilisateur==="pierre") {
+      pointUser++;
+      return(" pierre gagne !");
+
+    }
+    else {
+      pointOrdi++;
+      return("ciseaux gagne !");
+
+    }
+
+}
+
+  }
+alert ( comparer (choixOrdi, choixUtilisateur)); //appelle la fonction//
+alert ("ordinateur: " + pointOrdi +"."+" "+ "vous: " + pointUser + ".");// Affiche les points//
 
 }
