@@ -77,6 +77,7 @@ else if(choixOrdi==="ciseaux") {
 }
 
   }
+
 alert ( comparer (choixOrdi, choixUtilisateur)); //appelle la fonction//
 alert ("ordinateur: " + pointOrdi +"."+" "+ "vous: " + pointUser + ".");// Affiche les points//
 
